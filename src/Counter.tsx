@@ -8,7 +8,8 @@ import {
 	counterIncrement,
 	counterDecrement,
 	counterReset,
-} from "../redux/store/count/actions";
+} from "../redux/store/actions";
+
 
 const Counter = () => {
 	const { count } = useSelector(
@@ -17,7 +18,7 @@ const Counter = () => {
 	const dispatch = useDispatch();
 	const handleClick = (num: number) => {
 		if (num === 1) {
-			dispatch(counterIncrement());
+			dispatch(counterIncrement())
 		} else if (num === 0) {
 			dispatch(counterDecrement());
 		} else if (num === 2) {

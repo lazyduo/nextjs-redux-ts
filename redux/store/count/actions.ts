@@ -2,20 +2,14 @@ import {
 	actionTypesCounter,
 } from "../../interfaces"
 
-export const counterIncrement = () => {
-    return {
-        type: actionTypesCounter.COUNTER_INCREMENT
-    }
-}
+export const counterIncrement = () => ({
+    type: actionTypesCounter.COUNTER_INCREMENT
+})
 
-export const counterDecrement = () => {
-    return {
-        type: actionTypesCounter.COUNTER_DECREMENT
-    }
-}
+export const counterDecrement = () => ({
+    type: actionTypesCounter.COUNTER_DECREMENT
+})
 
-export const counterReset = () => {
-    return {
-        type: actionTypesCounter.COUNTER_RESET
-    }
-}
+export const counterReset = () => ({
+    type: actionTypesCounter.COUNTER_RESET
+})
